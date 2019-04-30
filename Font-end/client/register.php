@@ -172,19 +172,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <li class="has-dropdown">
                                 <a href="classes.html">Classes</a>
                                 <ul class="dropdown">
-                                    <li><a href="classes-single.html">Classes Single</a></li>
-                                    <li><a href="#">Cardio Classes</a></li>
-                                    <li><a href="#">Muscle Classes</a></li>
-                                    <li><a href="#">Fitness Classes</a></li>
-                                    <li><a href="#">Body Building</a></li>
-                                    <li><a href="#">Kids Classes</a></li>
-                                </ul>
+										<?php
+													for($i = 0; $i<count($data1); $i++) {
+														$var =($data1[$i]['nameType']);
+														$lien=$var.".php";
+	
+																											?>
+											
+											<li>	<a href=" <?php echo($lien)?>">
+											
+											
+												<?php
+														print_r($data1[$i]['nameType']);
+													}
+												?>
+											</a></li>
+											
+										</ul>
                             </li>
-                            <li><a href="schedule.html">Schedule</a></li>
-                            <li><a href="about.html">Trainers</a></li>
-                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="schedule.php">Schedule</a></li>
+                            <li><a href="about.php">Trainers</a></li>
+                            <li><a href="deals.php">Deals</a></li>
                             <li class="active"><a href="account.php">Account</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>

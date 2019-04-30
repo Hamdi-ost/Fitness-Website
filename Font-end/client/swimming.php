@@ -136,17 +136,17 @@
 						<div class="classes">
                                 <div class="desc">
                                 <h1><strong> Swimming  </strong></h1>
-								<!-- 
+								
                                 <?php 
-					            // for($i = 0; $i<count($data); $i++) {
-							    // if ($data[$i]['nameActivity']=='Swimming'){
-							    // $ind = $i ; 
+					            for($i = 0; $i<count($data); $i++) {
+							     if ($data[$i]['nameActivity']=='Swimming'){
+							     $ind = $i ; 
 								?>
 								<br> 
                                 <p>
-                                    <?php //echo($data[$ind]['description']) ;}}?>
-                                </p> -->
-                                <p>Aimed at the children between the age of 6 and 12 years old.Our lessons provide an introduction to professionnal swimming Practiced under the supervision of our coach </p>
+                                    <?php echo($data[$ind]['description']) ;}}?>
+                                </p> 
+                                <!-- <p>Aimed at the children between the age of 6 and 12 years old.Our lessons provide an introduction to professionnal swimming Practiced under the supervision of our coach </p> -->
                                 <h3> The general benefits of Swimming  </h3>
                                 <p><br>Contributes to the development of all muscles.</br>
                                 <br>Harmoniously solicits the respiratory system and develops lung capacity.</br>

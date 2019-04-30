@@ -139,13 +139,13 @@
 					<div class="schedule text-center animate-box">
 						<div class="col-md-12">
 							<ul class="week">
-								<li><a href="schedule.html#ancre">Sunday</a></li>
+								<li><a href="schedule.php#ancre">Sunday</a></li>
 								<li class="active"><a href="#ancre">Monday</a></li>
-								<li><a href="tuesday.html#ancre">Tuesday</a></li>
-								<li><a href="wednesday.html#ancre">Wednesday</a></li>
-								<li><a href="thursday.html#ancre">Thursday</a></li>
-								<li><a href="friday.html#ancre">Friday</a></li>
-								<li><a href="saturday.html#ancre">Saturday</a></li>
+								<li><a href="tuesday.php#ancre">Tuesday</a></li>
+								<li><a href="wednesday.php#ancre">Wednesday</a></li>
+								<li><a href="thursday.php#ancre">Thursday</a></li>
+								<li><a href="friday.php#ancre">Friday</a></li>
+								<li><a href="saturday.php#ancre">Saturday</a></li>
 							</ul>
 						</div>
                         <div class="schedule-flex">

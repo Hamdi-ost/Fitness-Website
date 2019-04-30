@@ -29,6 +29,6 @@ include_once "../scripts/callApi.php";
    'addressMembre'=> trim($_POST["address"]),
    'DateNais'=> trim($_POST["birthday"])
  );
- $make_call = callAPI('POST', 'http://localhost/Gym-Website/Back-end/api/controllers/member/create.php', json_encode($newMember));
+ $make_call = callAPI('POST', 'http://localhost:8080/Fitness-Website/Back-end/api/controllers/member/create.php', json_encode($newMember));
 
  header("location: member.php");
