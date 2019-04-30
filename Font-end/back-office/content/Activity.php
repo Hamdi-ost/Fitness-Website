@@ -2,6 +2,17 @@
 <?php 
 include_once "../scripts/callApi.php";
 
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+  //delete
+  if (!empty(trim($_POST["id"]))) {
+      $idActivity = array (
+        'idActivity'=> trim($_POST["id"])
+      );
+      $make_call = callAPI('POST', 'http://localhost:8080/Fitness-Website/Back-end/api/controllers/activity/delete.php', json_encode($idActivity));
+  } 
+}
+
 ?>
 
 <div class="content-wrapper">
@@ -36,7 +47,9 @@ include_once "../scripts/callApi.php";
                 <td><?php echo $val["idTrainer"] ?> </td>
                 <td> 
                   <button class=" btn btn-info" >Edit</button>/
-                  <button class=" btn btn-info" > Delete </button></td>
+                  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <button type="submit" name="id" class=" btn btn-info" value=<?php echo $val["idActivity"] ?> > Delete </button></td>
+                  </form>
               </tr>
               <?php  } ?>
             </tbody>

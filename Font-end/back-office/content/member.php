@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </thead>
             <tbody>
               <?php
-              $get_data = callAPI('GET','http://localhost/Gym-Website/Back-end/api/controllers/member/read.php', false);
+              $get_data = callAPI('GET','http://localhost:8080/Fitness-Website/Back-end/api/controllers/member/read.php', false);
               $response = json_decode($get_data, true);
               $data = $response['records'];
                 foreach($data as $key=>$val){
